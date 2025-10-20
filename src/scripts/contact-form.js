@@ -14,7 +14,7 @@ export function initContactForm() {
 
     try {
       // Using Formspree - replace with your form endpoint
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/meorwoeb', {
         method: 'POST',
         body: formData,
         headers: {
