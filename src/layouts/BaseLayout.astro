@@ -24,5 +24,14 @@ const {
   </head>
   <body class="antialiased">
     <slot />
+
+    <script>
+      import { initScrollAnimations, initSmoothScroll } from '../scripts/animations.js';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initScrollAnimations();
+        initSmoothScroll();
+      });
+    </script>
   </body>
 </html>
