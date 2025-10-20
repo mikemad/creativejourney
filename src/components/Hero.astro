@@ -1,8 +1,8 @@
 ---
-// Hero component with animations
+// Hero component with scroll indicator
 ---
 
-<section id="hero" class="min-h-screen flex items-center justify-center animated-gradient">
+<section id="hero" class="min-h-screen flex items-center justify-center animated-gradient relative">
   <div class="container mx-auto px-6 text-center text-white">
     <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up">
       Creative Journey
@@ -19,4 +19,10 @@
       </a>
     </div>
   </div>
+
+  <a href="#services" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white opacity-75 hover:opacity-100 transition-opacity scroll-indicator">
+    <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </a>
 </section>
