@@ -4,6 +4,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
-  site: 'https://mikemad.github.io',
-  base: '/creativejourney',
+  site: 'https://creativejourney.com',
+  base: '/',
 });
