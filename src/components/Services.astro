@@ -1,0 +1,34 @@
+---
+import ServiceCard from './ServiceCard.astro';
+---
+
+<section id="services" class="py-24 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        What We Do
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        We bridge technical expertise with creative problem-solving to deliver exceptional results.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <ServiceCard
+        icon="📱"
+        title="App Development"
+        description="Custom mobile and web applications built with modern technologies. From concept to deployment, we create intuitive experiences that users love."
+      />
+      <ServiceCard
+        icon="🤖"
+        title="AI Solutions"
+        description="Intelligent systems that solve real problems. We implement cutting-edge AI and machine learning solutions tailored to your business needs."
+      />
+      <ServiceCard
+        icon="💡"
+        title="Consulting"
+        description="Expert guidance for your technical challenges. Strategic planning, architecture reviews, and hands-on support to accelerate your projects."
+      />
+    </div>
+  </div>
+</section>
