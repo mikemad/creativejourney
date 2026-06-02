@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = "2026-06-02";
+---
+
+<BaseLayout
+  title="Privacy Policy | Creative Journey"
+  description="Privacy Policy for Creative Journey. Learn what we collect, how we use it, and how we protect your data."
+>
+  <main class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <section class="bg-gradient-primary py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Privacy Policy
+          </h1>
+          <p class="text-xl text-blue-100">
+            Last updated: {lastUpdated}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+          <div class="prose prose-lg max-w-none text-gray-700 space-y-8">
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">The short version</h2>
+              <p>
+                Creative Journey stores the minimum it needs to run a signed-in account, your
+                paper-trade history, and (if you opt in) SMS alerts. We don't sell your data, we
+                don't use third-party advertising trackers, and we delete everything tied to your
+                account when you ask us to.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">What we collect</h2>
+              <ul class="list-disc pl-6 space-y-3">
+                <li>
+                  <strong>OAuth profile data.</strong> When you sign in with GitHub or Google, we
+                  receive your name, email address, and profile picture URL from the OAuth provider.
+                  We store the email and a stable user ID; the rest is used at render time and not
+                  persisted.
+                </li>
+                <li>
+                  <strong>Mobile phone number (only if you opt in).</strong> If you enable SMS Buy
+                  alerts, we store the phone number you provide and a timestamped record of your
+                  consent. See the SMS section below.
+                </li>
+                <li>
+                  <strong>Your in-app activity.</strong> Paper trades you record (entry/exit price,
+                  share count, notes), tickers on your watchlist, and your notification preferences.
+                  These are scoped to your user ID.
+                </li>
+                <li>
+                  <strong>Session cookies.</strong> A signed JWT issued by Auth.js so we know who's
+                  signed in. No third-party analytics cookies.
+                </li>
+                <li>
+                  <strong>Server logs.</strong> Standard HTTP request logs (IP, path, status,
+                  timestamp) for operational purposes. Retained 30 days.
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">What we don't collect</h2>
+              <ul class="list-disc pl-6 space-y-3">
+                <li>Payment information (no paid tier yet).</li>
+                <li>Brokerage credentials or real-money trade data.</li>
+                <li>Behavioural tracking, browser fingerprinting, or third-party advertising identifiers.</li>
+                <li>Anything from your watchlist or trade ledger that isn't directly required to render the page.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Why we collect it</h2>
+              <p>
+                To run the service: authenticate you, render your dashboard, save the trades you
+                record, surface the patterns firing on tickers you care about, and — if you opt in —
+                text you when a stock turns Buy. That's it.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">SMS / Text Message Alerts</h2>
+              <p>
+                Creative Journey offers an optional SMS alert program that texts you when a stock
+                enters a "Buy" state on your Creative Journey digest.
+              </p>
+              <ul class="list-disc pl-6 space-y-3 mt-4">
+                <li>
+                  <strong>What we collect.</strong> If you opt in, we collect the mobile phone number
+                  you provide and a record of your consent (date and time).
+                </li>
+                <li>
+                  <strong>How we use it.</strong> Your phone number is used solely to send you the
+                  transactional stock alerts you requested. We do not use it for marketing or
+                  promotional messaging.
+                </li>
+                <li>
+                  <strong>Consent.</strong> You opt in by entering your mobile number and checking the
+                  consent box in your account settings. Message frequency varies based on market
+                  activity. Message and data rates may apply.
+                </li>
+                <li>
+                  <strong>Opt-out and help.</strong> You can stop messages at any time by replying
+                  STOP, or by turning off SMS alerts in your account settings. Reply HELP for
+                  assistance.
+                </li>
+                <li>
+                  <strong>Data retention.</strong> We keep your number and consent record only while
+                  SMS alerts are enabled on your account. Removing your number or deleting your
+                  account erases it.
+                </li>
+              </ul>
+              <p class="mt-4">
+                No mobile information will be shared with third parties or affiliates for marketing or
+                promotional purposes. Information sharing to subcontractors in support services, such
+                as our SMS provider (Twilio), is permitted solely to carry out the alert service. All
+                other use, sharing, or sale of mobile opt-in data and consent is prohibited.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Who we share with</h2>
+              <p>
+                No third parties for marketing. We use service providers solely to operate the
+                product:
+              </p>
+              <ul class="list-disc pl-6 space-y-3 mt-4">
+                <li>
+                  <strong>Twilio</strong> — to deliver the SMS alerts you opted into. Your number is
+                  shared with Twilio only to send those messages.
+                </li>
+                <li>
+                  <strong>Polygon.io and SEC EDGAR</strong> — to source market and news data. That's
+                  outbound data we fetch, not anything we send about you.
+                </li>
+              </ul>
+              <p class="mt-4">
+                We may disclose data if compelled by a legitimate legal request, but we have not
+                received any such request and we'll tell you if we do (unless legally gagged).
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">How long we keep it</h2>
+              <p>
+                For as long as your account is active. When you delete your account, we remove your
+                user row and everything cascading from it (watchlist, paper trades, phone/consent
+                record, session records) within 30 days. Anonymous backups may persist for an
+                additional 30 days for disaster-recovery purposes.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Your rights</h2>
+              <p>
+                You can view, export, or delete your data at any time from your account page. If
+                you're an EU/UK resident, you also have the GDPR rights of access, rectification,
+                erasure, restriction, portability, and objection — all of which we honor by default in
+                the account-settings interface.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Children</h2>
+              <p>
+                Creative Journey is not directed at users under 18. If we discover an account belongs
+                to a minor, we'll delete it.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Security</h2>
+              <p>
+                Data sits in a Postgres database with TLS-encrypted connections. Passwords are not
+                stored (sign-in is OAuth-only). Session tokens are signed JWTs with short expiry. We
+                follow standard web-application security practices but no system is impenetrable; if a
+                breach occurs that materially affects you, we'll notify you promptly.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Changes</h2>
+              <p>
+                If we change this policy, the "Last updated" date changes and material changes get an
+                in-app notice on your next sign-in. Continued use after the change constitutes
+                acceptance.
+              </p>
+            </section>
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact</h2>
+              <p>
+                Privacy questions or requests:
+                <a href="mailto:privacy@creativejourney.com" class="text-primary-blue hover:text-primary-purple font-semibold">privacy@creativejourney.com</a>,
+                or use the contact link from your account page.
+              </p>
+            </section>
+          </div>
+
+          <!-- Back Link -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <a
+              href="/"
+              class="text-primary-blue hover:text-primary-purple font-semibold transition-colors"
+            >
+              ← Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
